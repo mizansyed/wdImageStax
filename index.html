@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Image Stax : Scattered Stacked Image Gallery">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Image Stax</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mizansyed/wdImageStax">View on GitHub</a>
+
+          <h1 id="project_title">Image Stax</h1>
+          <h2 id="project_tagline">Scattered Stacked Image Gallery</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mizansyed/wdImageStax/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mizansyed/wdImageStax/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="wd_imagestax-by-with-digital-mizansyed" class="anchor" href="#wd_imagestax-by-with-digital-mizansyed" aria-hidden="true"><span class="octicon octicon-link"></span></a>WD_ImageStax by With Digital (<a href="https://github.com/mizansyed" class="user-mention">@mizansyed</a>)</h1>
+
+<p>Version: 0.5 Beta</p>
+
+<p>Stack/pile photos or images and shuffle on rotate.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add jquery library to your webpage:</p>
+
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Add jquery.wdImageStax.min.js, after the above line:</p>
+
+<pre><code>&lt;script src="jquery.wdImageStax.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Optional: Add wdImageStax.css:</p>
+
+<pre><code>&lt;link href="css/wdImageStax.css" rel="stylesheet"&gt;
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>/* place inside a wrapper */
+&lt;div id="gallery-wrapper"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;img src="1.jpg" /&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="2.jpg" /&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="3.jpg" /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+$(document).ready(function() {
+    $('#gallery-wrapper').wdImageStax({height:500});
+
+    //or 
+    //with default options
+    $('#gallery-wrapper').wdImageStax();
+});
+</code></pre>
+
+<p>The following options are available (default shown below) :</p>
+
+<pre><code>  height: 500 (do not add units e.g. px), default is false;
+  width: 500 (do not add units e.g. px, default is false;
+  list: "name-of-your-ul-class", default is false which will use the child ul it finds;
+  index: z-index value for your image stack to start with, default is 1200;
+  degree: maximum degree your image stack will be rotated, default is 20;
+  animateSpeed: the speed of rotate and shuffle in milliseconds, default is 500;
+  evaluateOnWindowResize: adjust the animation area if the window is resized, default is true
+</code></pre>
+
+<p>See example/index.html for usage</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Image Stax maintained by <a href="https://github.com/mizansyed">mizansyed</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
