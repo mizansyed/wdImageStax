@@ -19,8 +19,9 @@
 </head>
 
 <body>
-    <h1></h1>
-    <div class="row">
+    <h1>Examples</h1>
+    <div class="row" style="margin-bottom: 200px">
+    <h2 style="padding: 50px;">Example 1</h2>
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div id="gallery-wrapper">
@@ -47,17 +48,46 @@
         <div class="col-md-4"></div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <div class="row">
+    <h2 style="padding: 50px;">Example 2</h2>
+
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            
+            <div id="gallery-wrapper2">
+                <ul id="test" class="image-list">
+                    <li>
+                        <img src="images/photo-1.jpg" class="img-responsive" />
+                    </li>
+                    <li>
+                        <img src="images/photo-2.jpg" class="img-responsive" />
+                    </li>
+                    <li>
+                        <img src="images/photo-3.jpg" class="img-responsive" />
+                    </li>
+                    <li>
+                        <img src="images/photo-4.jpg" class="img-responsive" />
+                    </li>
+                    <li>
+                        <img src="images/photo-5.jpg" class="img-responsive" />
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    <script type='text/javascript' src='js/jquery-ui.min.js'></script>
     <script type="text/javascript" src="js/jquery.wdImageStax.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#gallery-wrapper').wdImageStax({height:500});
+            $('#gallery-wrapper').wdImageStax({height:500, index:600,  degreePattern: "random", imageStyles: {'padding-top': '60px'}});
+
+            $('#gallery-wrapper2').wdImageStax({swingTop: 0.1, swingLeft: 0.1, index:600});
         });
     </script>
 </body>
