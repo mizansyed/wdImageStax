@@ -4,6 +4,8 @@ Version: 0.7 Beta
 
 Stack/pile/scatter photos or images and shuffle on rotate.
 
+![Scatter Stacked Images](https://github.com/mizansyed/wdImageStax/blob/master/example/images/wdImageStax.jpg?raw=true)
+
 ## Installation
 
 Add jquery library to your webpage:
