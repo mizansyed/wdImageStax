@@ -32,11 +32,13 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="wd_imagestax-by-with-digital-mizansyed" class="anchor" href="#wd_imagestax-by-with-digital-mizansyed" aria-hidden="true"><span class="octicon octicon-link"></span></a>WD_ImageStax by With Digital (<a href="https://github.com/mizansyed" class="user-mention">@mizansyed</a>)</h1>
+<a id="wd_imagestax-by-with-digital-mizansyed---mizan-syed" class="anchor" href="#wd_imagestax-by-with-digital-mizansyed---mizan-syed" aria-hidden="true"><span class="octicon octicon-link"></span></a>WD_ImageStax by With Digital (<a href="https://github.com/mizansyed" class="user-mention">@mizansyed</a> - Mizan Syed)</h1>
 
-<p>Version: 0.5 Beta</p>
+<p>Version: 0.7 Beta</p>
 
-<p>Stack/pile photos or images and shuffle on rotate.</p>
+<p>Stack/pile/scatter photos or images and shuffle on rotate.</p>
+
+<p><img src="https://github.com/mizansyed/wdImageStax/blob/master/example/images/wdImageStax.jpg" alt="Scatter Stacked Images"></p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
@@ -44,6 +46,7 @@
 <p>Add jquery library to your webpage:</p>
 
 <pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"&gt;&lt;/script&gt;
 </code></pre>
 
 <p>Add jquery.wdImageStax.min.js, after the above line:</p>
@@ -82,13 +85,17 @@ $(document).ready(function() {
 <pre><code>  height: 500 (do not add units e.g. px), default is false;
   width: 500 (do not add units e.g. px, default is false;
   list: "name-of-your-ul-class", default is false which will use the child ul it finds;
+  centreImages: whether to centre the images. Default is false;
   index: z-index value for your image stack to start with, default is 1200;
-  degree: maximum degree your image stack will be rotated, default is 20;
+  degree: maximum degree your image stack will be rotated/scattered, default is 20;
+  degreePattern: the pattern it should rotate/scatter the image. The choices are "default" or "random", with former will rotate by same degree value increment;
   animateSpeed: the speed of rotate and shuffle in milliseconds, default is 500;
-  evaluateOnWindowResize: adjust the animation area if the window is resized, default is true
+  swingTop: the height of the swing, in relation to the size of the image. The default is 0.4 (1 would represent 100% of the height);
+  swingLeft: the length of the swing to the left, in relation to the size of the image. The default is 0.6 (1 would represent 100% of the height);
+  evaluateOnWindowResize: adjust the animation area if the window is resized, default is true;
+  wrapperStyles: styles for the gallery selector/element, default is empty {}
+  imageStyles: styles for each of the images, default is empty {}
 </code></pre>
-
-<p>See example/index.html for usage</p>
       </section>
     </div>
 
