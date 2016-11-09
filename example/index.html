@@ -55,7 +55,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             
-            <div id="gallery-wrapper2">
+            <div class="gallery-wrapper2">
                 <ul id="test" class="image-list">
                     <li>
                         <img src="images/photo-1.jpg" class="img-responsive" />
@@ -87,7 +87,7 @@
         $(document).ready(function() {
             $('#gallery-wrapper').wdImageStax({height:500, index:600,  degreePattern: "random", imageStyles: {'padding-top': '60px'}});
 
-            $('#gallery-wrapper2').wdImageStax({swingTop: 0.1, swingLeft: 0.1, index:600});
+            $('.gallery-wrapper2').wdImageStax({swingTop: 0.1, swingLeft: 0.1, index:600});
         });
     </script>
 </body>
