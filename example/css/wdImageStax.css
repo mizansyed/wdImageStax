@@ -11,6 +11,6 @@ ul.image-list li {
     margin:0 0 0 0;
 }
 
-img {
+.gallery-wrapper2 img, #gallery-wrapper img {
     width: 70%
 }
